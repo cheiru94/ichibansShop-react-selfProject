@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@500&family=Moirai+One&family=Noto+Sans+KR:wght@300&family=Zen+Kurenaido&display=swap');
+
+
+
+
+
+.main-bg {
+  height: 700px;
+  background-image: url('./ukiyoe4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 30px
+}
+
+body {
+  text-align: center;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-family: 'Moirai One', cursive;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Zen Kurenaido', sans-serif;
+}
+
+
+.overlay-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 1s;
+  top: 100%;
+
+}
+
+.col-md-4 img {
+  width: 100%;
+}
+
+.overlay-wrap:hover .overlay {
+  opacity: 1;
+  top: 90%;
+  line-height: 35px;
+  font-size: 30px;
+  text-align: center;
+  /* line-height: 80px;
+  font-size: 30px; */
+}
+
+.start {
+  opacity: 0
+}
+
+.end {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
